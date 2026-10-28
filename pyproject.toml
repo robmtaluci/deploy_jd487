@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "robmtaluci-deploy_jd487"
+version = "0.1.0"
+description = "解析时间标记，排列模型部署工程师·批处理调度与吞吐折中的发生顺序，标出间隔异常与逆序事件"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "robmtaluci" }]
+keywords = ["analysis", "observability", "evaluation", "rag"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://robmtaluci.github.io"
+Repository = "https://github.com/robmtaluci/deploy_jd487"
+Issues = "https://github.com/robmtaluci/deploy_jd487/issues"
+
+[project.scripts]
+deploy_jd487 = "deploy_jd487:main"
+
+[tool.setuptools]
+py-modules = ["deploy_jd487"]
